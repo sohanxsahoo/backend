@@ -16,7 +16,7 @@
 ## Dive Into Project:
 **[npm i ___ *(in depedencies)*] & [npm i --save-dev/-D ___ *(in dev dependencies)*]**
 - **nodemon**  [A tool for Node.js that automatically restarts the server when it detects file changes, streamlining the development process.]
--
+- **prettier** [Prettier is an opinionated code formatter that enforces a consistent style by reformatting code according to its own rules, wrapping lines as needed.]
 
 ## Directory Structure
 **Most thing going inside `src` folder**
