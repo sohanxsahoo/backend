@@ -11,7 +11,7 @@
 - *The **.gitkeep** file is a placeholder file used to keep an empty directory in a Git repository.*
 - *The **.gitignore** file used to specify files or directories that should be ignored by Git. (ref: .gitignore generator by Mark Andreev)*
 
-**git status > git commit -m "message" > git push**
+**git status > git add . > git commit -m "message" > git push**
 
 ## Dive Into Project:
 **[npm i ___ *(in depedencies)*] & [npm i --save-dev/-D ___ *(in dev dependencies)*]**
