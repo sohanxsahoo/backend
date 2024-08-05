@@ -13,11 +13,6 @@
 
 **git status > git add . > git commit -m "message" > git push**
 
-## Dive Into Project:
-**[npm i ___ *(in depedencies)*] & [npm i --save-dev/-D ___ *(in dev dependencies)*]**
-- **nodemon**  [A tool for Node.js that automatically restarts the server when it detects file changes, streamlining the development process.]
-- **prettier** [Prettier is an opinionated code formatter that enforces a consistent style by reformatting code according to its own rules, wrapping lines as needed.]
-
 ## Directory Structure
 **Most thing going inside `src` folder**
 - **models:** Representations of data structures, typically mirroring database tables.
@@ -26,6 +21,11 @@
 - **middlewares:** Functions that execute between the request and response cycle.
 - **routes:** Define the mapping between URLs and controller actions.
 - **utils:** Helper functions that can be used throughout the application.
+
+## Dive Into Project:
+**[npm i ___ *(in depedencies)*] & [npm i --save-dev/-D ___ *(in dev dependencies)*]**
+- **nodemon**  [A tool for Node.js that automatically restarts the server when it detects file changes, streamlining the development process.]
+- **prettier** [Prettier is an opinionated code formatter that enforces a consistent style by reformatting code according to its own rules, wrapping lines as needed.]
 
 ## Reference:
 - **Guru: Hitesh Choudhary**
