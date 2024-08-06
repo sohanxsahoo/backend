@@ -27,6 +27,15 @@
 - **nodemon**  [A tool for Node.js that automatically restarts the server when it detects file changes, streamlining the development process.]
 - **prettier** [Prettier is an opinionated code formatter that enforces a consistent style by reformatting code according to its own rules, wrapping lines as needed.]
 
+- **Step-1: Data Modelling** [Model Link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)
+
+- **Step-2: DB Connect**
+    * **.env** >>> *store PORT and MONGODB_URI*
+    * **src/constants.js** >>> *store and export DB_NAME*
+    * **src/db/index.js** >>> *mongoose db connection code and export*
+    * **src/index.js** >>> *call db connection function and config dotenv*
+    
+- **Step-3: Custom API Response**
+
 ## Reference:
 - **Guru: Hitesh Choudhary**
-- **Step-1: Data Modelling** [Model Link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)
