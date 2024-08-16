@@ -33,12 +33,31 @@
     * **.env** >>> *store PORT and MONGODB_URI*
     * **src/constants.js** >>> *store and export DB_NAME*
     * **src/db/index.js** >>> *mongoose db connection code and export*
-    * **src/index.js** >>> *call db connection function and config dotenv*
+    * **src/server.js** >>> *call db connection function and config dotenv*
     
 - **Step-3: Custom API Response**
-    * **src/utils/asyncHandler.js** >>> **
-    * **src/utils/ApiError.js** >>>  
+    * **src/app.js** >>> *preparing the server for API requests*
+    * **src/utils/asyncHandler.js** >>> *middleware function for handling asynchronous requests*
+    * **src/utils/ApiError.js** >>> *It provides additional properties and functionality to handle API-related errors, including a status code, error message, and error details.*
     * **src/utils/ApiResponse.js** >>>  
+
+- **Step-4 Model With Hooks & JWT**
+    * **src/models/user-model.js** >>> *A Mongoose schema for a User model that includes fields for authentication, profile information, and a pre-save hook to hash passwords. It also defines instance methods for password verification and token generation*
+
+- **Step-5 Upload Files, Cloudinary & Multer**
+    * **src/utils/cloudinary.js** >>> *Uploads a file to Cloudinary, returns the response if successful, and removes the local file if the upload fails, using environment variables for Cloudinary configuration.*
+    * **src/middlewares/multer.middlewares.js** >>>
+
+- **Step-6 Router & Controller with Debugging**
+    * **src/controllers/user.controler.js** >>> 
+    * **src/routes/user.routes.js** >>> 
+
+- **Step-7 Logic Building | Register Controller**
+
+
+- **Step-8 Postman for Backend**
+    * 
+
 
 ## Reference:
 - **Guru: Hitesh Choudhary**
