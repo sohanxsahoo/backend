@@ -1,5 +1,3 @@
-import { timeStamp } from "console";
-import { type } from "express/lib/response";
 import mongoose, {Schema} from "mongoose";
 
 const subscriptionSchema = new Schema({
@@ -10,8 +8,8 @@ const subscriptionSchema = new Schema({
     channel: {
         type: Schema.Types.ObjectId,    // channel being subscribed to
         ref: 'User'
-    },
-}, {timeStamp: true})
+    }
+}, {timestamps: true})
 
 
 export const Subscription = mongoose.model("Subscription", subscriptionSchema)
