@@ -39,4 +39,8 @@ router
 
 router.route("/toggle/publish/:videoId").patch(togglePublishStatus);
 
+// Secured Routes
+router.route("/video").get(getAllVideos);
+router.route("/views/:videoId").get(viewsinvideo);
+
 export default router

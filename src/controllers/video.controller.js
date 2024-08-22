@@ -170,7 +170,6 @@ const togglePublishStatus = asyncHandler(async (req, res) => {
 
   // Toggle the publish status
   video.isPublished = !video.isPublished;
-
   // Save the updated video record
   await video.save();
 
