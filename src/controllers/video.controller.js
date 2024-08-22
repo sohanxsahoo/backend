@@ -58,10 +58,37 @@ const getAllVideos = asyncHandler(async (req, res) => {
 });
 
 
+
+
 const publishAVideo = asyncHandler(async (req, res) => {
     const { title, description} = req.body
     // TODO: get video, upload to cloudinary, create video
-})
+    const videoFile = req.file; // Assuming you're using multer to handle file uploads
+
+    if (!videoFile) {
+        return res.status(400).json({ message: 'No video file uploaded' });
+    }
+
+    // Upload video to Cloudinary
+    const uploadResult = await cloudinary.uploader.upload(videoFile.path, {
+        resource_type: 'video',
+    });
+
+    // Create video entry in the database
+    const newVideo = new Video({
+        title,
+        description,
+        url: uploadResult.secure_url,
+        cloudinaryId: uploadResult.public_id,
+    });
+
+    await newVideo.save();
+
+    res.status(201).json({ message: 'Video published successfully', video: newVideo });
+});
+
+
+
 
 const getVideoById = asyncHandler(async (req, res) => {
     const { videoId } = req.params
